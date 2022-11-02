@@ -10,6 +10,10 @@ public class recursiveFibonacci {
         return fib(n-1) + fib(n-2);
     }
     public static void main(String[] args) {
-        System.out.println(fib(6));
+        Scanner input= new Scanner(System.in);
+        System.out.println("Sayıyı Giriniz: ");
+        int number= input.nextInt();
+        System.out.println("Fibonacci Değeri: f("+number+")=" +fib(number));
+        input.close();
     }
 }
